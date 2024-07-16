@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jacob Villard's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,19 +14,38 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="https://jacobvillard.wordpress.com/">Blog</a></li>
                     <li><a href="about.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section id="home">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Explore my projects and learn more about me.</p>
-        </section>
+        <div class="about-me">
+            <p>I like to think I'm an all-rounder able to fit into a lot of roles, but I excel at:</p>
+            <ul class="no-bullets">
+                <li>UI design</li>
+                <li>Programming, scripting and bug fixing</li>
+                <li>Creating and implementing robust game mechanics and loops</li>
+            </ul>
+	    <p>Check out my projects on <a href="https://github.com/darknerior" target="_blank">GitHub</a>.</p>
+	    <p>jacobvillard@gmail.com</p>
+        </div>
+        <div class="pong-container">
+            <h2>Reverse Pong</h2>
+            <canvas class="pongCanvas"></canvas>
+            <div class="gameOverScreen">
+                <h1>Game Over</h1>
+                <p class="finalScore"></p>
+                <button onclick="startGame()">Restart Game</button>
+            </div>
+            <button class="startButton">Start Game</button>
+        </div>
+        <div class="scoreDisplay">Score: 0</div>
     </main>
     <footer>
         <p>&copy; 2024 Jacob Villard</p>
     </footer>
+    <script src="js/reversePong.js"></script>
 </body>
 </html>
