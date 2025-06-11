@@ -3,54 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broadcast Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Room One - Indie Game Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G5TLHQGLV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9G5TLHQGLV');
-    </script>
 </head>
 <body>
-    <header>
-        <h1>My Broadcast Portfolio</h1>
-    </header>
-    
-    <section id="reel">
-        <h2>My Casting Reel</h2>
-    	<video id="videoPlayer" width="560" height="315" controls>
-        	<source id="videoSource" src="videos/video1.mp4" type="video/mp4">
-        	Your browser does not support the video tag.
-    	</video>
-    	<br>
-    	<button id="prevVideo">Previous</button>
-    	<button id="nextVideo">Next</button>
-    </section>
-    
-    <section id="broadcast-data">
-        <h2>Broadcast Data</h2>
-        <table id="data-table">
-            <thead>
-                <tr>
-                    <th>Game</th>
-                    <th>Organiser</th>
-                    <th>Role</th>
-                    <th>Date</th>
-                    <th>Hours</th>
-                    <th>Stream</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Data will be loaded dynamically from spreadsheet -->
-            </tbody>
-        </table>
-    </section>
-    
-    <script src="script.js"></script> 
+<header>
+    <h1>Room One</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="landing">
+    <h2>Welcome to Room One</h2>
+    <p>We are an indie game studio, dedicated to creating unique and exciting gaming experiences.</p>
+</section>
+
+<section class="products">
+    <h3>Our Games</h3>
+    <ul>
+        <li>
+            <div class="game-item">
+                <p>Gobsmacked!</p>
+                <a href="https://wikipedia.com" target="_blank">
+                    <img src="gobsmacked-image.jpg" alt="Gobsmacked Game Image">
+                </a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Room One Studio</p>
+</footer>
 </body>
 </html>
