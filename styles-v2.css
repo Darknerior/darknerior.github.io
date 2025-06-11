@@ -109,7 +109,7 @@ a:hover {
 }
 
 /* Centering Text on Other Pagess */
-.contact, .privacy-policy {
+.contact, .privacy-policy, .product-info, .product-overview, .game-details {
     background-color: #444;
     padding: 20px;
     margin: 20px;
