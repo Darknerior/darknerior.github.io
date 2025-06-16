@@ -25,7 +25,18 @@
     <p>If you have any questions, collaborations, or media inquiries — we’d love to hear from you!</p>
     <p>Email us directly at: <a href="mailto:contactroomone@gmail.com">contactroomone@gmail.com</a></p>
 </section>
-
+<section class="ad-wrapper">
+    <div class="ad-row">
+        <div class="banner-ad" id="ad-container">
+            <!-- Adsterra will inject here -->
+        </div>
+        <div class="banner-referral">
+            <a href="https://beta.publishers.adsterra.com/referral/yiJNZ9QKRH" rel="nofollow" target="_blank">
+                <img src="https://landings-cdn.adsterratech.com/referralBanners/png/300%20x%20250%20px.png" alt="Join Adsterra" />
+            </a>
+        </div>
+    </div>
+</section>
 <footer>
     <p>&copy; 2025 Room One Studio. All rights reserved.</p>
     <div class="socials">
@@ -37,5 +48,29 @@
         </a>
     </div>
 </footer>
+
+<script>
+    window.addEventListener("load", function () {
+        const adContainer = document.getElementById("ad-container");
+
+        const atScript = document.createElement("script");
+        atScript.type = "text/javascript";
+        atScript.innerHTML = `
+      atOptions = {
+        'key': '65b9609bfe54f5e684d42e79760b9b82',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    `;
+        const loaderScript = document.createElement("script");
+        loaderScript.src = "//www.highperformanceformat.com/65b9609bfe54f5e684d42e79760b9b82/invoke.js";
+        loaderScript.async = true;
+
+        adContainer.appendChild(atScript);
+        adContainer.appendChild(loaderScript);
+    });
+</script>
 </body>
 </html>
