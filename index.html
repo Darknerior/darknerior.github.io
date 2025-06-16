@@ -1,47 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Room One - Indie Game Studio</title>
-    <link rel="stylesheet" href="styles-v2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room One Studio</title>
+    <link rel="stylesheet" href="styles-v2.css" />
+    <style>
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+            border-radius: 12px;
+            animation: fadeIn 1s ease;
+            position: relative;
+        }
+
+        .hero-logo {
+            width: 160px;
+            height: auto;
+            margin-bottom: 2rem;
+            animation: popIn 0.8s ease forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .hero h2 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .cta-button {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #66bb6a;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
 <header>
-    <h1>Room One</h1>
+    <div class="logo-space">Room One</div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="gobsmacked.html">Gobsmacked!</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="EULA.html">EULA</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="gobsmacked.html">Gobsmacked!</a></li>
         </ul>
     </nav>
 </header>
 
-<section class="landing">
-    <h2>Welcome to Room One</h2>
-    <p>We are an indie game studio, dedicated to creating unique and exciting gaming experiences.</p>
+<section class="hero">
+    <!-- 🧠 Insert your goblin logo here -->
+    <img src="IMG_09255.png" alt="Gobsmacked Goblin Logo" class="hero-logo" />
+
+    <h2>We Make Games That Leave You Gobsmacked</h2>
+    <p>Room One Studio is a small indie team crafting unforgettable puzzle and adventure experiences.<br>Simple, striking, and smart.</p>
+    <a href="gobsmacked.html"><button class="cta-button">Explore Gobsmacked!</button></a>
 </section>
 
-<section class="products">
-    <h3>Our Games</h3>
-    <ul>
-        <li>
-            <div class="game-item">
-                <p>Gobsmacked!</p>
-                <a href="gobsmacked.html" target="_blank">
-                    <img src="gobsmacked-image.jpg" alt="Gobsmacked Game Image">
-                </a>
-            </div>
-        </li>
-    </ul>
+<section class="call-to-action" id="cta">
+    <div class="cta-content">
+        <h2>Play Gobsmacked! Soon</h2>
+        <p>We're preparing to launch on your favorite platforms.</p>
+        <div class="cta-buttons">
+            <a href="#" class="store-button">
+                <img src="epic-logo.png" alt="Epic Games Store" />
+            </a>
+            <a href="#" class="store-button">
+                <img src="steam-logo.png" alt="Steam Store" />
+            </a>
+        </div>
+    </div>
+    <img src="goblin-flourish.png" alt="Goblin Illustration" class="flourish" />
 </section>
+
+<div class="main-with-sidebar">
+    <section class="media-panel">
+        <h2>From the Studio</h2>
+        <div class="media-card">
+            <img src="placeholder.png" alt="Devlog Thumbnail" />
+            <div class="media-info">
+                <h3>Latest Devlog</h3>
+                <p>Peek behind the scenes of Gobsmacked! development.</p>
+            </div>
+        </div>
+
+        <div class="media-card">
+            <img src="placeholder.png" alt="Trailer Thumbnail" />
+            <div class="media-info">
+                <h3>Watch the Trailer</h3>
+                <p>See the chaos and charm of Gobsmacked! in motion.</p>
+            </div>
+        </div>
+
+        <div class="banner-ad">
+            <a href="#"><img src="your-ad-banner.png" alt="Ad banner" /></a>
+        </div>
+    </section>
+</div>
+
+
+
+<section class="who-we-are">
+    <h2>Who We Are</h2>
+
+    <div class="features">
+        <!-- Feature 1 -->
+        <div class="feature-box">
+            <img src="icon-one.png" alt="One Thing Icon" />
+            <h3>We Do One Thing</h3>
+            <p>We keep it crisp and fun with one core mechanic you can pick up and put down.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-box">
+            <img src="icon-two.png" alt="Do It Right Icon" />
+            <h3>We Do It Right</h3>
+            <p>We polish until it gleams. Quality, delight, and playability are non-negotiable.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box">
+            <img src="icon-three.png" alt="Our Way Icon" />
+            <h3>We Do It Our Way</h3>
+            <p>With a distinct look, fresh puzzles, and a healthy dose of goblin humor.</p>
+        </div>
+    </div>
+
+    <div class="studio-logo">
+        <div class="studio-text-logo">
+            <div class="line">ROOM</div>
+            <div class="line">ONE</div>
+        </div>
+        <p class="studio-sub">INDIE GAME STUDIO</p>
+    </div>
+</section>
+
+
 
 <footer>
-    <p>&copy; 2025 Room One Studio</p>
+    <p>&copy; 2025 Room One Studio. All rights reserved.</p>
+    <div class="socials">
+        <a href="https://tiktok.com/@yourstudio" target="_blank">
+            <img src="tiktok-icon.png" alt="TikTok" />
+        </a>
+        <a href="https://bsky.app/profile/yourstudio" target="_blank">
+            <img src="bluesky-icon.png" alt="Bluesky" />
+        </a>
+    </div>
 </footer>
+
+<script>
+    // Subtle logo bounce when the user hovers
+    const logo = document.querySelector('.hero-logo');
+    if (logo) {
+        logo.addEventListener('mouseenter', () => {
+            logo.style.transition = 'transform 0.3s ease';
+            logo.style.transform = 'scale(1.08)';
+        });
+        logo.addEventListener('mouseleave', () => {
+            logo.style.transform = 'scale(1)';
+        });
+    }
+
+    // Reveal features on scroll
+    const boxes = document.querySelectorAll('.feature-box');
+    const revealOnScroll = () => {
+        boxes.forEach(box => {
+            const top = box.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) {
+                box.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Reveal call-to-action on scroll
+    const ctaSection = document.querySelector('.call-to-action');
+    const revealCTA = () => {
+        if (ctaSection && ctaSection.getBoundingClientRect().top < window.innerHeight - 100) {
+            ctaSection.classList.add('visible');
+        }
+    };
+
+    window.addEventListener('scroll', revealCTA);
+    window.addEventListener('load', revealCTA);
+
+</script>
 </body>
 </html>
