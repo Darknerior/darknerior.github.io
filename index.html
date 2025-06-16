@@ -96,29 +96,8 @@
     <img src="goblin-flourish.png" alt="Goblin Illustration" class="flourish" />
 </section>
 
-<div class="main-with-sidebar">
-    <section class="media-panel">
-        <h2>From the Studio</h2>
-        <div class="media-card">
-            <img src="placeholder.png" alt="Devlog Thumbnail" />
-            <div class="media-info">
-                <h3>Latest Devlog</h3>
-                <p>Peek behind the scenes of Gobsmacked! development.</p>
-            </div>
-        </div>
-
-        <div class="media-card">
-            <img src="placeholder.png" alt="Trailer Thumbnail" />
-            <div class="media-info">
-                <h3>Watch the Trailer</h3>
-                <p>See the chaos and charm of Gobsmacked! in motion.</p>
-            </div>
-        </div>
-
-        <div class="banner-ad">
-            <a href="#"><img src="your-ad-banner.png" alt="Ad banner" /></a>
-        </div>
-    </section>
+<div class="banner-ad" id="ad-container">
+    <!-- Ad will be injected here -->
 </div>
 
 
@@ -209,6 +188,28 @@
 
     window.addEventListener('scroll', revealCTA);
     window.addEventListener('load', revealCTA);
+
+    window.addEventListener("load", function () {
+        const adContainer = document.getElementById("ad-container");
+
+        const atScript = document.createElement("script");
+        atScript.type = "text/javascript";
+        atScript.innerHTML = `
+      atOptions = {
+        'key': '65b9609bfe54f5e684d42e79760b9b82',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    `;
+        const loaderScript = document.createElement("script");
+        loaderScript.src = "//www.highperformanceformat.com/65b9609bfe54f5e684d42e79760b9b82/invoke.js";
+        loaderScript.async = true;
+
+        adContainer.appendChild(atScript);
+        adContainer.appendChild(loaderScript);
+    });
 
 </script>
 </body>
