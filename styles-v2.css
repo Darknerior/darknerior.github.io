@@ -450,3 +450,29 @@ footer .socials img {
     text-align: center;
 }
 
+.eula-meta {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.eula-intro {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+section.EULA h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    border-bottom: 1px solid var(--primary-green);
+    padding-bottom: 0.4rem;
+}
+
+section.EULA p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
