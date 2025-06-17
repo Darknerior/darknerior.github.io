@@ -401,6 +401,7 @@ footer .socials img {
 
 .discord-cta {
     text-align: center;
+    align-items: center;
     padding: 3rem 2rem;
     margin: 4rem 2rem;
     background-color: #2b2b2b;
@@ -410,17 +411,20 @@ footer .socials img {
 
 .discord-cta h2 {
     color: var(--primary-green);
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .discord-cta p {
     color: #ccc;
+    align-items: center;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
 }
 
 .discord-button img {
+    align-items: center;
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
