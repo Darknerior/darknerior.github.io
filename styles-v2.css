@@ -407,6 +407,14 @@ footer .socials img {
     background-color: #2b2b2b;
     border-radius: 12px;
     animation: fadeIn 1s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.discord-cta.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .discord-cta h2 {
@@ -435,3 +443,10 @@ footer .socials img {
 .discord-button img:hover {
     transform: scale(1.03);
 }
+
+.discord-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
